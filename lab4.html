@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .itemContainer{
+            border: 1px solid transparent;
+            padding: 1rem 3rem 3rem 3rem;
+            padding-left: 3rem;
+            background-color: white;
+            height: 13rem;
+            width: 13rem;
+            border-radius: 0.1rem;
+        }
+        li{
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 0 4px rgb(204, 204, 204), -1px 0 4px rgb(204, 204, 204), 0 1px 4px rgb(204, 204, 204), 0 -1px 4px rgb(204, 204, 204);
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+        }
+        ul li::marker{
+            color: gray;
+            text-shadow: 1px 0 4px rgb(150, 150, 150), -1px 0 4px rgb(247, 247, 247), 0 1px 4px rgb(247, 247, 247), 0 -1px 4px rgb(247, 247, 247) ;
+        }
+        .disc>li{
+            list-style-type: disc;
+        }
+        .square{
+            list-style-type: square;
+        }
+        .circle{
+            list-style-type: circle;
+        }
+        .decimal{
+            list-style-type: decimal;
+        }
+        .decimalZero{
+            list-style-type: decimal-leading-zero;
+        }
+        .lowerAlpha{
+            list-style-type: lower-alpha;
+        }
+        p{
+            margin-bottom: 1rem;
+            font-weight: 900;
+            font-size: 1.5rem;
+            font-family: 'Poppins', 'sans-seriff';
+        }
+        body{
+            display: flex;
+             flex-wrap: wrap;
+             gap: 1.5rem;
+             background-color: rgb(204, 204, 204);
+           margin: 1rem;
+           color: rgb(83, 83, 83);
+        }
+    </style>
+</head>
+<body>
+    <div class="itemContainer">
+        <p>Style disc</p>
+        <ul class="disc">
+            <li>Friday</li>
+            <li>Monday</li>
+            <li>Saturday</li>
+            <li>Wednesday</li>
+        </ul>
+    </div>
+    <div class="itemContainer">
+        <p>Style square</p>
+        <ul class="square">
+            <li>Friday</li>
+            <li>Monday</li>
+            <li>Saturday</li>
+            <li>Wednesday</li>
+        </ul>
+    </div>
+    <div class="itemContainer">
+        <p>Style circle</p>
+        <ul class="circle">
+            <li>Friday</li>
+            <li>Monday</li>
+            <li>Saturday</li>
+            <li>Wednesday</li>
+        </ul>
+    </div>
+    <div class="itemContainer">
+        <p>Style decimal</p>
+        <ul class="decimal">
+            <li>Friday</li>
+            <li>Monday</li>
+            <li>Saturday</li>
+            <li>Wednesday</li>
+        </ul>
+    </div>
+    <div class="itemContainer">
+        <p>Style decimal zero</p>
+        <ul class="decimalZero">
+            <li>Friday</li>
+            <li>Monday</li>
+            <li>Saturday</li>
+            <li>Wednesday</li>
+        </ul>
+    </div>
+    <div class="itemContainer">
+        <p>Style lower-alpha</p>
+        <ul class="lowerAlpha">
+            <li>Friday</li>
+            <li>Monday</li>
+            <li>Saturday</li>
+            <li>Wednesday</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+             background-color: grey;
+
+         }
+     .navbar{
+        background-color: rgb(73, 73, 117);
+        height: 10rem;
+        width: 100%;
+     }
+     .menu{
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+     }
+     .list{
+        display: flex;
+        height: 4rem;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        background: rgb(68, 7, 68);
+        align-items: center;
+        width: 70%;
+
+     }
+     ul> li{
+        padding-left: 2rem;
+     }
+     .container{
+        margin-top: 1rem;
+        /* display: flex;
+        flex-wrap: wrap; */
+     }
+     @media all and (max-width:700px){
+   body{
+    background-color: blue;
+   }
+   .item-container{
+    width: 20%;
+   }
+   .itemImage{
+    width: 20%;
+   }
+    }
+     .item-container{
+        background-color: white;
+        display: inline-block;
+        height: 17rem;
+        width: 15rem;
+        margin: 2rem;
+        text-align: center;
+     }
+     .itemImage{
+        height: 13rem;
+        width: 15rem;
+        object-fit: cover;
+     }
+     .item-text{
+        font-size: 0.9rem;
+        margin-top: ;
+    }
+    .item-heading{
+         margin-top: ;
+        font-size: 1.3rem;
+        font-weight: 550;
+        color: rgb(66, 64, 64);
+     }
+    </style>
+</head>
+<body>
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4SPn_oCSEU96kqNKnY8eOEYZCO3Dpisy5kg&s" usemap="#computer" alt="">
+    <map name="computer">
+        <area shape="rect" coords="10,32,164,123" href="javascript:alert('Hello World!');" alt="">
+        <area shape="poly" coords="22,165,165,165,170,185,16,185" href="https://facebook.com" alt="" target="_black">
+    </map> -->
+    <header>
+        <div class="navbar">
+            <p class="menu">HTML CSS Menu</p>
+            <ul class="list">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>BLOG</li>
+                <li>PORTFOLIO</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item-container">
+            <img class="itemImage" src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">  
+      <p class="item-heading">Mountains</p>
+      <p class="item-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="item-container">
+            <img class="itemImage" src="https://images.pexels.com/photos/220118/pexels-photo-220118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <p class="item-heading">Lights</p>
+            <p class="item-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="item-container">
+         <img class="itemImage" src="https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" >
+         <p class="item-heading">Nature</p>
+         <p class="item-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="item-container">
+         <img class="itemImage" src="https://images.pexels.com/photos/103286/pexels-photo-103286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <p class="item-heading">Retro</p>
+        <p class="item-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="item-container">
+       <img class="itemImage" src="https://images.pexels.com/photos/1213294/pexels-photo-1213294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+    <p class="item-heading">Fast</p>    
+    <p class="item-text">Lorem ipsum dolor sit amet.</p>
+    </div>
+        <div class="item-container">
+   <img class="itemImage" src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+   <p class="item-heading">Classic</p>
+   <p class="item-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="item-container">
+<img class="itemImage" src="https://images.pexels.com/photos/670720/pexels-photo-670720.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+<p class="item-heading">Men</p>
+<p class="item-text">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+</html>

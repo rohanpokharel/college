@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan</title>
+    <style>
+        body{
+            display: Flex;
+            font-weight: 500;
+            font-size: 1.1rem;
+            justify-content: center;
+        }
+        .container1, .container2{
+            border: 3px solid black;
+           padding: 0 4rem;
+           width: 30rem;
+        }
+        .container1{
+            font-size: 1.3rem;
+        }
+        .container2{
+            font-size: 0.9rem;
+        }
+        .A{
+            list-style-type: upper-alpha;
+        }
+        .i{
+            list-style-type: lower-roman;
+        }
+        .I{
+            list-style-type: upper-roman;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <h1>Nested Unordered List</h1>
+        <p>GeeksforGeeks courses list:</p>
+        <ul>
+            <li>DSA
+                <ul>
+                    <li>Array</li>
+                    <li>Linked List</li>
+                    <li>Stack</li>
+                    <li>Queue</li>
+                </ul>
+            </li>
+            <li>Web Technologies
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Aptitude</li>
+            <li>Gate</li>
+            <li>Placement</li>
+        </ul>
+    </div>
+    <div class="container2">
+        <h2>Learning Web Development</h2>
+        <ol class="I">
+            <li>Background Skills
+             <ol class="A">
+                <li>Unix Commands</li>
+                <li>Vim Text Editor</li>
+             </ol>
+            </li>
+            <li>HTML
+                <ol class="A">
+                    <li>Minimal pascalcollege</li>
+                    <li>Headings</li>
+                    <li>Tags</li>
+                    <li>Lists
+                        <ol class="i">
+                            <li>Unordered</li>
+                            <li>Ordered</li>
+                            <li>Definition</li>
+                            <li>Nested</li>
+                        </ol>
+                    </li>
+                    <li>Links
+                        <ol class="i">
+                            <li>Absolute</li>
+                            <li>Relative</li>
+                        </ol>
+                    </li>
+                    <li>Images</li>
+                </ol>
+            </li>
+            <li>CSS
+                <ol class="A">
+                    <li>Anatomy</li>
+                    <li>Basic Selectors
+                        <ol class="i">
+                            <li>Element</li>
+                            <li>Class</li>
+                            <li>ID</li>
+                            <li>Group</li>
+                        </ol>
+                    </li>
+                    <li>The DOM</li>
+                    <li>Advanced Selectors</li>
+                    <li>Box Model</li>
+                </ol>
+            </li>
+            <li>Programming
+                <ol class="A">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ol>
+            </li>
+            <li>Database
+                <ol class="A">
+                    <li>Flat File</li>
+                    <li>Relational</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

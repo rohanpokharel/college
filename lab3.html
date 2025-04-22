@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: rgb(255, 255, 255,0.7);
+        }
+        body{
+            background-color: rgb(110, 106, 106);
+        }
+        .navbar{
+            height: 4rem;
+            background-color: #735557;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 3rem;
+        }
+        
+        .navbar ul a{
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-right: 2rem;
+        }
+        .navbar ul{
+            list-style-type: none;
+        }
+        .sectionHead{
+            margin: 1.2rem;
+            font-size: 3rem;
+        }
+        .sectionParagraph, .servicesList{
+         font-size: 1.4rem;
+         margin-left: 1.5rem;
+         list-style-type: none;
+        }
+        #aboutUs{
+            background-color:rgb(128, 128, 61);
+            padding: 2rem 0;
+
+        }
+        #services{
+            background-color: #77676f;
+            padding: 2rem 0;
+        }
+        .itemImage{
+            height: 25rem;
+            width: 25rem;
+            object-fit: cover;
+        }
+        .itemTitle{
+            text-align: center;
+            color: rgb(65, 37, 37);
+            font-size: 1.5rem;
+            margin-top: 0.8rem;
+        }
+        section{
+            margin: 2rem 0;
+        }
+        .itemContainer{
+            background-color:rgb(161, 156, 175);
+            display: inline-block;
+            margin-left: 2rem;
+            height: 29rem;
+            width: 25rem;
+            margin-top: 1rem;
+        }
+        #gallery{
+            background-color: rgb(236, 230, 230);
+            margin: 3rem 0;
+        }
+        #galleryHead{
+            text-align: center;
+            color: black;
+            padding: 1rem 0;
+        }
+        #contactUs{
+            background-image:url('https://images.unsplash.com/photo-1688435232163-ccce9f59f7f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhY2tncm91bmQlMjBuYXR1cmUlMjBkYXJrfGVufDB8fDB8fHww');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 4rem;
+            font-size: 1rem;
+        }
+        *::placeholder{
+            color: rgb(177, 171, 171);
+        }
+        .contactHead{
+            font-size: 4rem;
+            text-align: center;
+           padding-top: 1.5rem;
+        }
+        .formContainer{
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+        }
+        .formHead{
+            font-size: 3rem;
+            color: rgb(144, 136, 167);
+            padding: 1rem 0;
+        }
+        form input{
+            height: 2rem;
+            margin: 0.5rem;
+            background-color: rgb(124, 71, 71);
+            outline: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        #loginForm, #registerForm{
+            height: 35rem;
+            width: 30rem;
+            padding: 0 2rem;
+            background-color: rgba(28, 31, 44, 0.9);
+            display: flex;
+            flex-flow: nowrap column;
+        }
+        .buttonAlign{
+            display: flex;
+            align-items: center;
+        }
+        .buttonGender{
+            display: flex;
+            gap: 1rem;
+        }
+        #buttonRemember[type="checkbox"], #buttonTerms[type="checkbox"]{
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            background-color: white;
+            border-radius: 25%;
+            position: relative;
+        }
+        #buttonRemember[type="checkbox"]:checked::after, #buttonTerms[type="checkbox"]:checked::after{
+            content: '';
+            position: absolute;
+           height: 0.7rem;
+           width: 0.7rem;
+           border-radius: 50%;
+           top: 2.2px;
+           left: 2.2px;
+           
+           background-color: blue;
+        }
+
+        .register, .login{
+            height: 3rem;
+            background-color: rgb(150, 150, 10);
+            margin-top: 1rem;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
+        .formParagraph{
+            margin-left: 0.5rem;
+        }
+        @media screen and (max-width: 600px) {
+            .formContainer{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            body > *{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+            <a href="#aboutUs">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contactUs">Contact Us</a>
+            </ul>
+        </div>
+    </header>
+   <section id="aboutUs">
+    <h1 class="sectionHead">About Us</h1>
+    <p class="sectionParagraph">This organization is a legally authorized sports broadcaster and betting platform from Nepal. We own all the legal rights to broadcast the live streaming of various sports like Football, Cricket, Tennis etc. We are motivated with the intent of bringing every national and international games to people in every corner of the world. We have created various platforms for sports lovers to interact with each other, give opinions, place bets.</p>
+   </section>
+   <section id="services">
+    <h1 class="sectionHead">Our Services</h1>
+    <ol class="servicesList">
+        <li>We organize betting for every game and provide rewards as per the bets.</li>
+        <li>We provide live broadcast, scores, ratings etc. of various games.</li>
+        <li>We offer expert analysis, insights and predictions on games.</li>
+        <li>We provide a platform for discussions and fan engagement.</li>
+        <li>We ensure secure and legal betting transactions.</li>        
+    </ol>
+   </section>
+   <section id="gallery">
+    <h1 class="sectionHead" id="galleryHead">Gallery</h1>
+     <div class="itemContainer">
+        <img src="https://media.cnn.com/api/v1/images/stellar/prod/221218184732-messi-wc-trophy.jpg?c=original" class="itemImage" alt="">
+        <p class="itemTitle">WC 2022</p>
+     </div>
+     <div class="itemContainer">
+        <img src="https://imgs.search.brave.com/t_1sdCrmQn_G2z-uGYGVt5-U4gz8C-qK9RdhjBsmT0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudGhlLWluZGVw/ZW5kZW50LmNvbS8y/MDIxLzA4LzA1LzE5/L2NkYmQ5NDMwZGNh/NzljMGI4Zjc5Yzk4/Nzc5MGE0YzM0WTI5/dWRHVnVkSE5sWVhK/amFHRndhU3d4TmpJ/Mk5ESXdPVGczLTIu/MTA4NTY4NTQuanBn" class="itemImage" alt="">
+        <p class="itemTitle">UCL 2011</p>
+     </div>
+     <div class="itemContainer">
+        <img src="https://assets.goal.com/images/v3/blt851bdfe34e842a43/Messi_shirt_celebration_2017.jpg" class="itemImage" alt="">
+        <p class="itemTitle">Vs Real Madrid</p>
+     </div>
+     <div class="itemContainer">
+        <img src="https://i.pinimg.com/236x/17/98/5c/17985c5cc68d31ee7834983442f828f8.jpg" class="itemImage" alt="">
+        <p class="itemTitle">Vs PSG</p>
+     </div>
+     <div class="itemContainer">
+        <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2019/03/12/6870f83b-f298-419f-afab-baa5e7ff1f55/LkiJLXgv.jpg" class="itemImage" alt="">
+        <p class="itemTitle">MSN</p>
+     </div>
+     <div class="itemContainer">
+        <img src="https://assets.goal.com/images/v3/blt9b16e5d6480c6efc/GHP_MESSI-BOOTS_16-9.jpg" class="itemImage" alt="">
+        <p class="itemTitle">UCL 2009</p>
+     </div>
+   </section>
+   <section id="contactUs">
+    <h1 class="contactHead">Register/Login Form</h1>
+    <div class="formContainer">
+        <form id="registerForm" action="">
+            <h1 class="formHead">Register Form:</h1>
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <p class="formParagraph">Please enter a valid email address.</p>
+            <input type="password" placeholder="Password">
+            <p class="formParagraph">Maximum of 6 characters.</p>
+            <div class="buttonGender">
+                <div class="buttonAlign">
+                    <input id="male" name="gender" type="radio">
+                    <label for="male">Male</label>
+                    </div>
+                    <div class="buttonAlign">
+                    <input id="female" name="gender" type="radio">
+                    <label for="female">Female</label>
+                    </div>
+            </div>
+            <div class="buttonAlign"><input id="buttonTerms" type="checkbox"> I have read and accept terms and conditions of use.
+            </div>
+            <button type="submit" class="register">Register</button>
+        </form>
+        <form id="loginForm" action="">
+            <h1 class="formHead">Login Form:</h1>
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Password">
+            <div class="buttonAlign">
+            <input id="buttonRemember" type="checkbox">Remember Me
+            </div>
+            <button class="login" type="submit">Login</button>
+        </form>
+    </div>
+   </section>
+</body>
+</html>

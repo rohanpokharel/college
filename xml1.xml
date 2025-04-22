@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<personData><!--root element/main container -->
+<user id="1">
+<fName>James</fName>
+<lName>Born</lName>
+<email>james@gmail.com</email>
+
+</user>
+<user id="2">
+<fName>John</fName>
+<lName>Smith</lName>
+<email>john@gmail.com</email>
+
+</user>
+<user id="3">
+<fName>Rodger</fName>
+<lName>Harper</lName>
+<email>rodger@gmail.com</email>
+</user>
+</personData>
